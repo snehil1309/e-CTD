@@ -1,0 +1,45 @@
+<div class="navbar-area">
+    <div class="mobile-nav">
+        <a routerLink="/" class="logo"><img src="../../../../assets/img/e-CTD.svg" alt="Logo"></a>
+    </div>
+
+    <div class="main-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light ">
+                <a class="navbar-brand" routerLink="/"><img src="../../../../assets/img/e-CTD.svg" alt="Logo"></a>
+
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a routerLink="/" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item"><a routerLink="/about" class="nav-link" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact: true}">About</a></li>
+
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{exact: true}">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="other-side">
+                        <div class="search-area">
+                            <div class="other-option">
+                                <div class="search-item">
+                                    <div class="container-fluid">
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
