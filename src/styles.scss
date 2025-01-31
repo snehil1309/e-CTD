@@ -1330,8 +1330,8 @@ Course Section
 }
 .course-item {
     margin-bottom: 30px;
-    max-width: 663px;
-    margin-left: auto;
+    // max-width: 700px;
+    // margin-left: auto;
 }
 .course-text {
     span {
@@ -1346,9 +1346,9 @@ Course Section
         margin-bottom: 20px;
     }
     p {
-        max-width: 760px;
-        margin-left: auto;
-        margin-right: auto;
+        // max-width: 760px;
+        // margin-left: auto;
+        // margin-right: auto;
         margin-bottom: 10px;
     }
     .course-btn {
@@ -1371,9 +1371,12 @@ Course Section
     z-index: -1;
 }
 .course-item-2 {
+    margin-top: 30px;
+    margin-right: 30px;
     margin-bottom: 30px;
-    max-width: 663px;
-    margin-right: auto;
+    margin-left: 30px;
+    // max-width: 663px;
+    // margin-right: auto;
 }
 .course-img-2 {
     margin-bottom: 30px;
@@ -4689,3 +4692,71 @@ Animation CSS
 /*==================================
 Animation CSS
 =====================================*/
+
+.card-home {
+    min-width: 100px;
+    max-width: 400px;
+    min-height: 180px;
+    max-height: 180px;
+    transition: 0.5s ease;
+    overflow-y: hidden; /* Default: No scroll on desktop */
+}
+
+/* Enables scrolling only on mobile & tablet */
+@media (max-width: 991px) { 
+    .card-home {
+        overflow-y: scroll; /* Enables vertical scrolling */
+        max-height: 300px; /* Allow card to expand on mobile if needed */
+    }
+}
+
+/* Hover effect remains unchanged */
+.card-home:hover {
+    min-height: 190px;
+    background-color: $main-color;
+    color: $color-white;
+}
+
+
+.cust-container-1 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+.features-section {
+    background-color: #ffffff; /* white */
+}
+
+.modules-section {
+    background-color: #e0e0e0; /* grey */
+}
+
+.benefits-section {
+    background-color: #ffffff; /* white */
+}
+
+/* home-one.component.scss */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 10px;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.scroll-container .card {
+    flex: 0 0 auto;
+    width: 500px; /* Adjust width as needed */
+    scroll-snap-align: start;
+}
+
