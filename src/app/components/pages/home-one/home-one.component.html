@@ -1,5 +1,4 @@
-<app-navbar-style-one></app-navbar-style-one>
-<!-- hero section start -->
+<!-- <app-navbar-style-one></app-navbar-style-one> -->
 <div class="home-slider">
     <div class="slider-area owl-carousel owl-theme">
         <div class="slider-item slider-bg1">
@@ -15,7 +14,7 @@
                                 ensures more efficient and compliant submissions by integrating two key components.
                             </p>
                             <div class="slider-btn">
-                                <a routerLink="/" class="default-btn1">Explore More</a>
+                                <a routerLink="/" class="default-btn1">Book a Demo</a>
                                 <a routerLink="/contact" class="default-btn2 ml-20">Contact Us</a>
                             </div>
                         </div>
@@ -32,7 +31,7 @@
                             <h1>Content Specification</h1>
                             <p>Defined by ICH standards. </p>
                             <div class="slider-btn">
-                                <a routerLink="/" class="default-btn1">Explore More</a>
+                                <a routerLink="/" class="default-btn1">Book a Demo</a>
                                 <a routerLink="/contact" class="default-btn2 ml-20">Contact Us</a>
                             </div>
                         </div>
@@ -52,7 +51,7 @@
                                 preparation for regulatory approvals.
                             </p>
                             <div class="slider-btn">
-                                <a routerLink="/" class="default-btn1">Explore More</a>
+                                <a routerLink="/" class="default-btn1">Book a Demo</a>
                                 <a routerLink="/contact" class="default-btn2 ml-20">Contact Us</a>
                             </div>
                         </div>
@@ -62,81 +61,112 @@
         </div>
     </div>
 </div>
-<!-- hero section start -->
-
-<!-- Features Section -->
-<!-- home-one.component.html -->
-<div class="scroll-container m-4 p-5" id="scrollContainer" (mousedown)="onMouseDown($event)"
-    (mouseleave)="onMouseLeave()" (mouseup)="onMouseUp()" (mousemove)="onMouseMove($event)">
-    <div class="card card-home shadow-sm" *ngFor="let card of cards" (mouseenter)="onCardHover(true)"
-        (mouseleave)="onCardHover(false)">
-        <div class="card-body">
-            <h5 class="card-title text-center">{{ card.title }}</h5>
-            <p *ngIf="card.description">{{ card.description }}</p>
-            <ul *ngIf="card.list">
-                <li *ngFor="let item of card.list">{{ item }}</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<!-- e-CTD Modules Section -->
-<div class="container-fluid modules-section py-5">
+<!--e-CTD Features Section -->
+<div class="container-fluid features-section bg-white py-5">
     <div class="container">
-        <div class="text-center">
-            <h2>e-CTD Modules</h2>
+        <div class="text-center course-text p-3 mb-3">
+            <span>HOME</span>
+            <h2>Features of e-CTD Plus</h2>
         </div>
-        <ul class="list-unstyled text-center">
-            <li>CTD Summaries (QOS)</li>
-            <li>Non-Clinical Study Reports</li>
-            <li>Administrative Information (Region Specific)</li>
-            <li>Quality (CMC)</li>
-            <li>Clinical Study Reports</li>
-        </ul>
-        <div class="text-center">
-            <a routerLink="/courses" class="default-btn2">Take Course</a>
-        </div>
-    </div>
-</div>
+        <!-- Cards Section -->
+        <div class="row row-cols-1 row-cols-md-3 mb-5 pb-5">
+            <!-- Looping through cardsData array -->
+            <div class="col-lg-3 mb-4" *ngFor="let card of cardsData">
+                <div class="card card-home">
+                    <div class="card-body text-center">
 
-<!-- Benefits Section -->
-<div class="container-fluid benefits-section py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5">
-                <div>
-                    <h2>Benefits of e-CTD Plus</h2>
-                    <ul>
-                        <li>
-                            <h3>Regulatory Compliance:</h3>
-                            <p>All file names and titles adhere to regulatory standards.</p>
-                        </li>
-                        <li>
-                            <h3>Fast Tracking:</h3>
-                            <ul>
-                                <li>Create CTD documents directly in Word.</li>
-                                <li>Attach CTD documents as optimised PDF files.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>Lifecycle Management:</h3>
-                            <p>Include relevant guidelines or templates directly at the leaf level.</p>
-                        </li>
-                        <li>
-                            <h3>Efficient Submissions:</h3>
-                            <p>Assign roles for “Doer,” “Reviewer,” and “Publisher” to streamline tasks.</p>
-                        </li>
-                    </ul>
-                    <div class="text-center text-lg-start">
-                        <a routerLink="/courses" class="default-btn2">Take Course</a>
+                        <!-- Space for Icon -->
+                        <div class="icon  mb-3">
+                            <i [class]="card.icon" class="ico-1" style="font-size: 2rem;"></i>
+                        </div>
+
+                        <!-- Card Title -->
+                        <h5 class="card-title">{{ card.title }}</h5>
+
+                        <!-- Card List Items -->
+                        <ul class="card-text">
+                            <li *ngFor="let detail of card.details">{{ detail }}</li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7 text-center">
-                <img src="../../../../assets/img/images.jpeg" class="img-fluid rounded-circle shadow-sm"
-                    alt="Course Images">
+        </div>
+    </div>
+</div>
+
+
+<!--e-CTD Modules Section -->
+<div class="modules-section py-5">
+    <div>
+        <div class="mod-img">
+            <div class="my-auto mod-content shadow-sm">
+                <div class="text-start mb-5">
+                    <h2>e-CTD Modules</h2>
+                </div>
+                <!-- Loop through eCTDModules array -->
+                <div class="text-start eff-hov" *ngFor="let module of eCTDModules">
+                    <p>{{ module }}</p>
+                </div>
+                <!-- <div class="text-end">
+                    <a routerLink="/courses" class="default-btn2">Take Course</a>
+                </div> -->
             </div>
+        </div>
+    </div>
+</div>
+
+<!--e-CTD Benefits Section -->
+<div #benefitsSection class="container-fluid benefits-section bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 bg-color p-4 m-3 shadow-lg rounded">
+                <div class="text-center mb-5">
+                    <h2>e-CTD Benefits</h2>
+                </div>
+                <div class="container">
+                    <h2>Key Benefits of e-CTD Plus</h2>
+                    <ul #animatedList class="animated-list">
+                        <li *ngFor="let feature of eCTDFeatures">{{ feature }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="../../../../assets/img/images.jpeg" class="img-fluid shadow-lg rounded" alt="Course Images">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Request a Demo Section -->
+<div class="container-fluid benefits-section bg-light py-5">
+    <div class="container text-center">
+        <div class="text-center course-text">
+            <span>Request a Demo</span>
+            <h2>Discover how e-CTD Plus can transform your regulatory submissions. Book a free demo today to experience
+            </h2>
+        </div>
+
+        <!-- Centered Row -->
+        <div class="row justify-content-center mt-4">
+
+            <!-- Centering the cards using d-flex -->
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="col-md-3 card card-hover m-2" *ngFor="let card of demoCards">
+                    <div class="card-body">
+                        <p class="card-text">{{ card }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Buttons aligned centrally -->
+        <div class="slider-btn text-center mt-4">
+            <a routerLink="/" class="default-btn1">Book a Demo</a>
+            <a routerLink="/contact" class="default-btn2 ml-20">Contact Us</a>
         </div>
     </div>
 </div>
