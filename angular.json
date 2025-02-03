@@ -115,6 +115,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/styles/_variables.scss",
               "src/styles.scss"
             ],
             "scripts": []

@@ -1,0 +1,103 @@
+@import 'src/styles.scss';
+
+/* home-one.component.scss */
+.scroll-container {
+    background-color: rgb(155, 155, 155);
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 10px;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scroll-behavior: smooth;
+    white-space: nowrap; /* Ensures cards stay in one line */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.scroll-container .card {
+    flex: 0 0 auto;
+    width: 500
+}
+
+.scroll-container .card:hover {
+    transform: scale(1.05); /* Slightly enlarge cards on hover */
+}
+
+.scroll-container .card-body p {
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words break correctly */
+    overflow: hidden; /* Hide any overflow without adding scrollbars */
+    text-overflow: ellipsis; /* Optional: Add "..." if the text is too long */
+    max-height: 100%; /* Ensure the text stays inside the card */
+}
+.scroll-container ul li {
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words break correctly */
+    overflow: hidden; /* Hide any overflow without adding scrollbars */
+    text-overflow: ellipsis; /* Optional: Add "..." if the text is too long */
+    max-height: 100%; /* Ensure the text stays inside the card */
+}
+
+
+
+.mod-img {
+    padding: 75px;
+    background-image: url(../../../../assets/img/CTD.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.mod-content{
+    width: 45vw;
+background-color: #ffffffd6;
+padding: 25px;
+border-radius: 6px;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Bullet Point List */
+.animated-list {
+    list-style: none;
+    padding: 0;
+}
+
+.animated-list li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    font-size: 16px;
+    margin: 12px 0;
+    background: #ff6464;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Checkmark Icon */
+.animated-list li::before {
+    content: "✔";
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Animation Active State */
+.animated-list li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

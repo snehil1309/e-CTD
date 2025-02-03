@@ -19,106 +19,131 @@ body {
     color: $body-color;
     font-family: $body-font;
 }
+
 a {
     display: inline-block;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     text-decoration: none;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         text-decoration: none;
     }
 }
+
 button {
     margin: 0;
     padding: 0;
     outline: 0;
 
     &:focus {
-        outline: 0 ;
+        outline: 0;
     }
 }
- h1, h2, h3, h4, h5, h6 {
-    color: $body-color;
-    font-weight: 600;
-    line-height: 1.3;
-}
-p {
-    font-family: $paragraph-font;
-    color: $paragraph-color;
-    font-weight: 400;
-}
+
+//  h1, h2, h3, h4, h5, h6 {
+//     color: $body-color;
+//     font-weight: 600;
+//     line-height: 1.3;
+// }
+// p {
+//     font-family: $paragraph-font;
+//     color: $paragraph-color;
+//     font-weight: 400;
+// }
 .bg-f9f9f9 {
     background-color: #f9f9f9;
 }
+
 .d-table {
     width: 100%;
     height: 100%;
 }
+
 .d-table-cell {
     display: table-cell;
     vertical-align: middle;
 }
-img {
-    max-width: 100%;
-}
+
+// img {
+//     max-width: 100%;
+// }
 .ptb-100 {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .pt-100 {
     padding-top: 100px;
 }
+
 .pt-94 {
     padding-top: 94px;
 }
+
 .pt-70 {
     padding-top: 70px;
 }
+
 .pb-70 {
     padding-bottom: 70px;
 }
+
 .pt-50 {
     padding-top: 50px;
 }
+
 .pt-60 {
     padding-top: 60px;
 }
+
 .pt-40 {
     padding-top: 40px;
 }
+
 .ml-50 {
     margin-left: 50px;
 }
+
 .mb-50 {
     margin-bottom: 50px;
 }
+
 .mb-30 {
     margin-bottom: 30px;
 }
+
 .ml-20 {
     margin-left: 20px;
 }
+
 .color-white {
     color: $color-white;
 }
+
 .box-shadow {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
+
 .border-radius {
     border-radius: 50px !important;
 }
+
 .border-radius-5 {
     border-radius: 5px;
 }
+
 .border-radius-10 {
     border-radius: 10px;
 }
+
 .border-radius-top {
     border-radius: 15px 15px 0 0;
 }
+
 .border-bottom {
-    border-bottom: 1px solid rgba(224, 220, 220,0.4) !important;
+    border-bottom: 1px solid rgba(224, 220, 220, 0.4) !important;
 }
 
 /*================================
@@ -133,7 +158,7 @@ Default Btn Style
     font-weight: 500;
     border: none;
     border-radius: 5px;
-    position: relative; 
+    position: relative;
     z-index: 1;
 
     &::before {
@@ -148,14 +173,17 @@ Default Btn Style
         background-color: $color-blue;
         transition: 0.7s;
     }
+
     &:hover::before {
         height: 100%;
         border-radius: 5px;
     }
+
     &:hover {
         color: $color-white;
     }
 }
+
 .default-btn2 {
     color: $color-white;
     text-align: center;
@@ -164,7 +192,7 @@ Default Btn Style
     padding: 14px 40px 10px 40px;
     font-weight: 500;
     border-radius: 5px;
-    position: relative; 
+    position: relative;
     z-index: 1;
 
     &::before {
@@ -179,14 +207,17 @@ Default Btn Style
         background-color: $main-color;
         transition: 0.7s;
     }
+
     &:hover::before {
         height: 100%;
-        border-radius: 5px;
+        border-radius: 2px;
     }
+
     &:hover {
         color: $color-white;
     }
 }
+
 .default-btn3 {
     color: $color-white;
     font-size: 18px;
@@ -202,6 +233,7 @@ Default Btn Style
         color: $color-white;
     }
 }
+
 .default-btn4 {
     color: $color-white;
     font-size: 18px;
@@ -217,6 +249,7 @@ Default Btn Style
         color: $color-white;
     }
 }
+
 /*================================
 Default Btn Style End
 ===================================*/
@@ -231,15 +264,18 @@ Section Title Style
         font-weight: 600;
         line-height: 0;
     }
+
     h2 {
         font-size: 35px;
         margin-top: 2px;
     }
+
     p {
         max-width: 560px;
-        margin:auto;
+        margin: auto;
     }
 }
+
 /*================================
 Section Title Style End
 ===================================*/
@@ -257,6 +293,7 @@ Preloader
     display: block;
     background: $color-blue;
 }
+
 .preloader-wave {
     position: absolute;
     top: 50%;
@@ -266,7 +303,7 @@ Preloader
     border-radius: 50%;
     margin: -30px 0 0 -30px;
 
-    &::before{
+    &::before {
         position: absolute;
         content: "";
         width: 60px;
@@ -279,7 +316,8 @@ Preloader
         -webkit-animation: wave-circle 1.6s linear infinite;
         animation: wave-circle 1.6s linear infinite;
     }
-    &::after{
+
+    &::after {
         content: "";
         width: 60px;
         height: 60px;
@@ -293,10 +331,12 @@ Preloader
         animation: scale 1.9s linear infinite;
     }
 }
+
 .preloader-wave:after {
     animation-delay: -0.3s;
     -webkit-animation-delay: -0.3s;
 }
+
 /*==================================
  Preloader End
 ====================================*/
@@ -304,35 +344,38 @@ Preloader
 /*==================================
 Back To Top Button 
 =====================================*/
-#toTop{
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	cursor: pointer;
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
     display: none;
     z-index: 99;
-} 
-.top-btn {
-        background-color: $body-color;
-        color: $color-white;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-        display: inline-block;
-        text-align: center;
-        line-height: 40px;
-        transition: .9s;
-        -webkit-transition: .9s;
+}
 
-        &:hover{
-            background: $main-color;
-            color: $color-white;
-            animation:none;
-        }
+.top-btn {
+    background-color: $body-color;
+    color: $color-white;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    transition: .9s;
+    -webkit-transition: .9s;
+
+    &:hover {
+        background: $main-color;
+        color: $color-white;
+        animation: none;
+    }
+
     i {
         animation: movebounce 3s linear infinite;
     }
 }
+
 /*==============================
 Back To Top Button 
 =================================*/
@@ -374,13 +417,16 @@ Header Area Style
                     left: -23px;
                     top: 0;
                 }
+
                 &:first-child::before {
                     display: none;
                 }
+
                 i {
                     font-size: 16px;
                     margin-right: 5px;
                 }
+
                 a {
                     color: $color-black;
 
@@ -391,6 +437,7 @@ Header Area Style
             }
         }
     }
+
     .social-icon {
         float: right;
 
@@ -407,7 +454,8 @@ Header Area Style
                     color: $color-black;
                     font-weight: 500;
 
-                    &.active, &:hover {
+                    &.active,
+                    &:hover {
                         color: $main-color;
                     }
                 }
@@ -415,6 +463,7 @@ Header Area Style
         }
     }
 }
+
 /*================================
 Header Area Style End
 ===================================*/
@@ -425,6 +474,7 @@ Navbar Area
 .navbar-area {
     background-color: $color-white;
 }
+
 .navbar-light {
     padding-left: 0;
     padding-right: 0;
@@ -435,6 +485,7 @@ Navbar Area
         }
     }
 }
+
 .sticky-nav {
     position: fixed;
     top: 0;
@@ -452,10 +503,12 @@ Navbar Area
         width: 100%;
         border-radius: 0;
     }
+
     .main-nav {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 }
+
 /* Main nav */
 .main-nav {
     position: inherit;
@@ -470,36 +523,48 @@ Navbar Area
     nav {
         .navbar-nav {
             .nav-item {
-                &:hover a, .active a {
+
+                &:hover a,
+                .active a {
                     color: $main-color;
                 }
+
                 a {
                     text-transform: capitalize;
                     color: $color-black;
                     font-weight: 400;
+                    transition: .3s ease;
 
                     i {
                         font-size: 10px;
                     }
-                    &:hover, :focus {
+
+                    &:hover,
+                    :focus {
                         color: $main-color;
+                        font-size: 25px;
                     }
+
                     &.active {
                         color: $main-color !important;
                     }
+
                     &.active i {
                         -webkit-transform: rotate(90deg);
                         transform: rotate(90deg);
                     }
+
                     &:hover i {
                         -webkit-transform: rotate(90deg);
                         transform: rotate(90deg);
                         transition: 0.7s;
                     }
+
                     .active::before {
                         transform: scale(1);
                     }
                 }
+
                 .dropdown-menu {
                     border: none;
                     border-radius: 0;
@@ -511,6 +576,7 @@ Navbar Area
                         &:last-child {
                             border-bottom: none;
                         }
+
                         a {
                             color: $color-black;
                             position: relative;
@@ -528,10 +594,14 @@ Navbar Area
                                 -webkit-transition: all 0.5s;
                                 transition: all 0.5s;
                             }
+
                             &:hover::before {
                                 width: 100%;
                             }
-                            &:hover, :focus, .active{
+
+                            &:hover,
+                            :focus,
+                            .active {
                                 color: $main-color;
                                 letter-spacing: 0.5px;
                             }
@@ -552,18 +622,20 @@ Navbar Area
                     a {
                         .active {
                             color: $main-color;
-                        } 
+                        }
                     }
                 }
             }
         }
     }
 }
+
 .mean-container {
-    a{
-        &.meanmenu-reveal{
+    a {
+        &.meanmenu-reveal {
             color: $body-color;
-            span{
+
+            span {
                 background-color: $body-color ;
             }
         }
@@ -594,6 +666,7 @@ Navbar Area
                 color: $color-black;
                 font-weight: 600;
             }
+
             .search-overlay {
                 display: none;
 
@@ -627,8 +700,9 @@ Navbar Area
 
                             &:focus {
                                 border-color: $main-color;
-                            }                              
+                            }
                         }
+
                         .search-button {
                             position: absolute;
                             right: 0;
@@ -650,6 +724,7 @@ Navbar Area
                     }
                 }
             }
+
             .search-btn {
                 -webkit-transition: all 0.5s;
                 transition: all 0.5s;
@@ -659,10 +734,12 @@ Navbar Area
                 &:hover {
                     color: $main-color;
                 }
+
                 &:hover i {
                     color: $main-color;
                 }
             }
+
             .close-btn {
                 cursor: pointer;
                 display: none;
@@ -673,6 +750,7 @@ Navbar Area
                 &:hover {
                     color: $main-color;
                 }
+
                 &.active {
                     display: block;
                     margin-left: 5px;
@@ -681,11 +759,13 @@ Navbar Area
             }
         }
     }
+
     .search-text {
         float: left;
         margin-top: 8px;
         margin-right: 10px;
     }
+
     .cart-area {
         display: inline-block;
         margin-left: 15px;
@@ -707,15 +787,18 @@ Navbar Area
                     color: $main-color;
                 }
             }
+
             i {
                 transition: .5s;
                 margin-right: 3px;
             }
+
             &:hover i {
                 color: $main-color;
-            }              
+            }
         }
     }
+
     .modal-menu {
         float: right;
         margin-left: 20px;
@@ -740,217 +823,237 @@ Navbar Area
 }
 
 /* Sidebar Modal */
-    .sidebar-modal {
-        position: relative;
+.sidebar-modal {
+    position: relative;
 
-        .navbar-nav {
-            li {
-                a {
-                    padding: 10px 0px 10px 15px;
-                }
+    .navbar-nav {
+        li {
+            a {
+                padding: 10px 0px 10px 15px;
             }
         }
-        .modal.right {
-            .modal-dialog {
-                position: fixed;
-                margin: auto;
-                width: 450px;
-                height: 100%;
-                -webkit-transform: translate3d(0%, 0, 0);
-                transform: translate3d(0%, 0, 0);
-            }
-            .modal-content {
-                height: 100%;
-                overflow-y: auto;
-                border-radius: 0;
-                border: none;
-                background-color: $color-white;
-            }
-            .modal-body {
-                padding: 30px;
+    }
 
-                .sidebar-modal-widget {
+    .modal.right {
+        .modal-dialog {
+            position: fixed;
+            margin: auto;
+            width: 450px;
+            height: 100%;
+            -webkit-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+        }
+
+        .modal-content {
+            height: 100%;
+            overflow-y: auto;
+            border-radius: 0;
+            border: none;
+            background-color: $color-white;
+        }
+
+        .modal-body {
+            padding: 30px;
+
+            .sidebar-modal-widget {
+                margin-bottom: 35px;
+
+                .title {
+                    position: relative;
+                    z-index: 1;
                     margin-bottom: 35px;
+                    color: $body-color;
+                    border-bottom: 1px solid #eeeeee;
+                    padding-bottom: 5px;
 
-                    .title {
-                        position: relative;
-                        z-index: 1;
-                        margin-bottom: 35px;
-                        color: $body-color;
-                        border-bottom: 1px solid #eeeeee;
-                        padding-bottom: 5px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                        width: 70px;
+                        height: 2px;
+                        border-radius: 5px;
+                        background: $color-blue;
+                    }
+                }
 
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            bottom: -1px;
-                            width: 70px;
-                            height: 2px;
-                            border-radius: 5px;
-                            background: $color-blue;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin-bottom: 0;
                         }
-                    }
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                    ul {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
 
-                        li {
-                            margin-bottom: 10px;
-
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
-                            a {
-                                font-size: 16px;
-                                color: $body-color;
-                                font-weight: 600;
-                                text-transform: capitalize;
-
-                                &:hover {
-                                    color: $main-color;
-                                }
-                            }
-                        }
-                    }
-                    .contact-info {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-
-                        li {
-                            position: relative;
-                            font-weight: 500;
-                            padding-left: 45px;
-                            text-transform: uppercase;
-                            margin-bottom: 10px;
+                        a {
                             font-size: 16px;
                             color: $body-color;
+                            font-weight: 600;
+                            text-transform: capitalize;
 
-                            span {
-                                font-size: 16px;
-                                display: block;
-                                font-weight: 400;
-                                color: $head-color;
-                                margin-top: 5px;
-                                text-transform: initial;
+                            &:hover {
+                                color: $main-color;
                             }
+                        }
+                    }
+                }
+
+                .contact-info {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        position: relative;
+                        font-weight: 500;
+                        padding-left: 45px;
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                        color: $body-color;
+
+                        span {
+                            font-size: 16px;
+                            display: block;
+                            font-weight: 400;
+                            color: $head-color;
+                            margin-top: 5px;
+                            text-transform: initial;
+                        }
+
+                        i {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            color: $color-white;
+                            text-align: center;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            font-size: 29px;
+                            -webkit-transition: all 0.5s;
+                            transition: all 0.5s;
+                            background-color: $color-blue;
+                            border-radius: 4px;
+                            font-size: 15px;
+                        }
+
+                        &:hover i {
+                            color: $color-white;
+                            background: $main-color;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .social-list {
+                    text-align: left;
+
+                    li {
+                        display: inline-block;
+                        padding-right: 5px;
+
+                        a {
                             i {
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                color: $color-white;
+                                width: 25px;
+                                height: 25px;
+                                display: inline-block;
                                 text-align: center;
-                                width: 35px;
-                                height: 35px;
-                                line-height: 35px;
-                                font-size: 29px;
+                                line-height: 25px;
+                                border-radius: 4px;
+                                color: $color-white;
+                                background-color: $body-color;
+                                font-size: 12px;
                                 -webkit-transition: all 0.5s;
                                 transition: all 0.5s;
-                                background-color: $color-blue;
-                                border-radius: 4px;
-                                font-size: 15px;
-                            }
-                            &:hover i {
-                                color: $color-white;
-                                background: $main-color;
-                            }
-                            &:last-child {
-                                margin-bottom: 0;
-                            } 
-                        }
-                    }
-                    .social-list {
-                        text-align: left;
 
-                        li {
-                            display: inline-block;
-                            padding-right: 5px;
-
-                            a {
-                                i {
-                                    width: 25px;
-                                    height: 25px;
-                                    display: inline-block;
-                                    text-align: center;
-                                    line-height: 25px;
-                                    border-radius: 4px;
-                                    color: $color-white;
-                                    background-color: $body-color;
-                                    font-size: 12px;
-                                    -webkit-transition: all 0.5s;
-                                    transition: all 0.5s;
-
-                                    &:hover {
-                                        background-color: $main-color;
-                                    }
-                                }
                                 &:hover {
-                                    color: $main-color;
+                                    background-color: $main-color;
                                 }
                             }
+
                             &:hover {
-                                color: $color-white;
+                                color: $main-color;
                             }
+                        }
+
+                        &:hover {
+                            color: $color-white;
                         }
                     }
                 }
             }
         }
-        .modal.right.fade.show {
-            .modal-dialog {
-                right: 0;
-                -webkit-animation: fadeInRight 0.6s linear;
-                animation: fadeInRight 0.6s linear;
-            }
+    }
+
+    .modal.right.fade.show {
+        .modal-dialog {
+            right: 0;
+            -webkit-animation: fadeInRight 0.6s linear;
+            animation: fadeInRight 0.6s linear;
         }
-        .modal-header {
-            display: inline;
-            padding: 0;
+    }
+
+    .modal-header {
+        display: inline;
+        padding: 0;
+        border: none;
+
+        .close {
+            height: 110px;
+            width: 30px;
+            color: $body-color;
+            margin: 0px;
+            padding: 0px;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             border: none;
+            opacity: 1;
 
-            .close {
-                height: 110px;
-                width: 30px;
-                color: $body-color;
-                margin: 0px;
-                padding: 0px;
-                cursor: pointer;
-                -webkit-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-                border: none;
-                opacity: 1;
-
-                i {
-                    margin-left: 0;
-                    font-size: 20px;
-                }
-            }
-            h2 {
-                background-color: $color-white;
-                -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-                box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-                padding: 30px 25px;
-            }            
-        }
-        button {
-            &:focus {
-                outline: 0px;
+            i {
+                margin-left: 0;
+                font-size: 20px;
             }
         }
+
+        h2 {
+            background-color: $color-white;
+            -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+            padding: 30px 25px;
+        }
     }
-    .sidebar-modal .modal.right.fade.show .modal-dialog {
-        right: 0;
-        -webkit-animation: fadeInRight 0.6s linear;
-        animation: fadeInRight 0.6s linear;
+
+    button {
+        &:focus {
+            outline: 0px;
+        }
     }
-    .sidebar-modal .modal.right.fade .modal-dialog {
-        right: 0;
-    }
+}
+
+.sidebar-modal .modal.right.fade.show .modal-dialog {
+    right: 0;
+    -webkit-animation: fadeInRight 0.6s linear;
+    animation: fadeInRight 0.6s linear;
+}
+
+.sidebar-modal .modal.right.fade .modal-dialog {
+    right: 0;
+}
+
 /*=================================
 Navbar Area End
 ====================================*/
@@ -976,17 +1079,20 @@ Home Slider
                 max-width: 735px;
                 font-weight: 500;
             }
+
             p {
                 margin-top: 24px;
                 color: $color-white;
                 max-width: 600px;
             }
+
             .slider-btn {
                 margin-top: 41px;
                 margin-bottom: 10px;
             }
         }
     }
+
     .owl-theme {
         .owl-dots {
             position: absolute;
@@ -1006,9 +1112,11 @@ Home Slider
                     border: 1px solid $color-white;
                     border-radius: 50%;
                 }
+
                 &:hover span {
                     background-color: $color-white !important;
                 }
+
                 &.active span {
                     background-color: $color-white !important;
                 }
@@ -1016,15 +1124,19 @@ Home Slider
         }
     }
 }
+
 .slider-bg1 {
-    background-image: linear-gradient(90deg, red, rgb(148, 1, 1));
+    background-image: url(../src/assets/img/e-ctd_Banner-01.jpg);
 }
+
 .slider-bg2 {
-    background-image: linear-gradient(90deg, rgb(5, 54, 110), rgb(137, 192, 255));
+    background-image: url(../src/assets/img/e-ctd_Banner-02.jpg);
 }
+
 .slider-bg3 {
-    background-image: linear-gradient(90deg, green, rgb(206, 252, 206));
+    background-image: url(../src/assets/img/e-ctd_Banner-03.jpg);
 }
+
 /*=================================
  Home Slider End 
 ===================================*/
@@ -1047,6 +1159,7 @@ Brand Area
         }
     }
 }
+
 /*=================================
 Brand Area End
 ====================================*/
@@ -1057,6 +1170,7 @@ About Section
 .about-area {
     background-color: #fffafa;
 }
+
 .about-text {
     margin-bottom: 30px;
 
@@ -1064,6 +1178,7 @@ About Section
         margin-top: 32px;
     }
 }
+
 .about-right {
     margin-bottom: 30px;
     position: relative;
@@ -1083,6 +1198,7 @@ About Section
         background-color: #000000;
         opacity: 0.7;
     }
+
     .play-area {
         position: relative;
         padding: 170px 0;
@@ -1098,12 +1214,14 @@ About Section
                 position: relative;
                 top: 4px;
             }
+
             &:hover {
                 color: $main-color;
             }
         }
     }
 }
+
 .icon-shape-1 {
     position: absolute;
     top: -75px;
@@ -1111,6 +1229,7 @@ About Section
     font-size: 75px;
     color: $main-color;
 }
+
 .icon-shape-2 {
     position: absolute;
     bottom: -55px;
@@ -1118,6 +1237,7 @@ About Section
     font-size: 75px;
     color: $color-blue;
 }
+
 /*=================================
 About Section End
 ====================================*/
@@ -1155,9 +1275,10 @@ Service Area
                     color: #ffeded;
                 }
             }
+
             .owl-next {
                 position: absolute;
-                right:-5%;
+                right: -5%;
                 width: 40px;
                 height: 40px;
                 font-size: 20px;
@@ -1174,6 +1295,7 @@ Service Area
                 }
             }
         }
+
         .owl-item.active.center {
             .service-item {
                 // background-image: url(assets/img/shape/bg-shape.png);
@@ -1182,9 +1304,11 @@ Service Area
                 h3 {
                     color: $color-white;
                 }
+
                 p {
                     color: $color-white;
                 }
+
                 .service-item-icon {
                     color: $color-white;
                 }
@@ -1192,6 +1316,7 @@ Service Area
         }
     }
 }
+
 .service-item {
     margin-bottom: 30px;
     padding: 35px 15px;
@@ -1204,34 +1329,40 @@ Service Area
     &:hover {
         background-color: transparent;
     }
+
     &.active::before {
         opacity: 1;
         height: 100%;
     }
+
     &.active .service-head h3,
     &.active .service-item-icon,
-    &.active  p {
+    &.active p {
         color: $color-white;
     }
+
     &:hover::before {
         opacity: 1;
         height: 100%;
         transform: 0.7s;
     }
+
     &:hover .service-icon {
         opacity: 1;
     }
+
     &:hover .service-head h3,
     &:hover .service-item-icon,
     &:hover p {
         color: $color-white;
     }
+
     &::before {
         content: '';
         position: absolute;
         opacity: 0;
         z-index: -1;
-        width:100%;
+        width: 100%;
         transition: .5s;
         height: 0;
         top: 0;
@@ -1243,6 +1374,7 @@ Service Area
         background-repeat: no-repeat;
         transition: 0.9s;
     }
+
     .service-item-icon {
         font-size: 80px;
         color: $color-blue;
@@ -1252,6 +1384,7 @@ Service Area
         transition: 0.9s;
         transition: .5s;
     }
+
     .service-head {
         position: relative;
         transition: .5s;
@@ -1261,16 +1394,19 @@ Service Area
             font-size: 24px;
         }
     }
+
     p {
         position: relative;
         max-width: 300px;
         margin: 0 auto;
         transition: .5s;
     }
+
     h3 {
         transition: .5s;
     }
 }
+
 /*=================================
 Services Area End
 ====================================*/
@@ -1286,6 +1422,7 @@ Apply Area
     width: 100%;
     height: 100%;
 }
+
 .apply-text {
     text-align: center;
     max-width: 760px;
@@ -1299,6 +1436,7 @@ Apply Area
         font-weight: 600;
         margin: 0;
     }
+
     h2 {
         font-size: 35px;
         max-width: 560px;
@@ -1306,6 +1444,7 @@ Apply Area
         color: $color-white;
         padding-top: 3px;
     }
+
     p {
         margin-top: 20px;
         max-width: 760px;
@@ -1313,10 +1452,12 @@ Apply Area
         margin-right: auto;
         color: $color-white;
     }
+
     .apply-btn {
         margin-top: 30px;
     }
 }
+
 /*=================================
 Apply Area End
 ====================================*/
@@ -1328,11 +1469,13 @@ Course Section
     overflow: hidden;
     position: relative;
 }
+
 .course-item {
     margin-bottom: 30px;
     // max-width: 700px;
     // margin-left: auto;
 }
+
 .course-text {
     span {
         font-size: 17px;
@@ -1340,21 +1483,25 @@ Course Section
         font-weight: 600;
         margin: 0;
     }
+
     h2 {
         font-size: 35px;
         padding-top: 3px;
         margin-bottom: 20px;
     }
+
     p {
         // max-width: 760px;
         // margin-left: auto;
         // margin-right: auto;
         margin-bottom: 10px;
     }
+
     .course-btn {
         margin-top: 35px;
     }
 }
+
 .course-img {
     margin-bottom: 30px;
     position: relative;
@@ -1364,12 +1511,14 @@ Course Section
         height: 100%;
     }
 }
+
 .course-dots {
     position: absolute;
     top: -60px;
     right: -50px;
     z-index: -1;
 }
+
 .course-item-2 {
     margin-top: 30px;
     margin-right: 30px;
@@ -1378,6 +1527,7 @@ Course Section
     // max-width: 663px;
     // margin-right: auto;
 }
+
 .course-img-2 {
     margin-bottom: 30px;
     position: relative;
@@ -1387,27 +1537,31 @@ Course Section
         height: 100%;
     }
 }
+
 .course-dots-2 {
     position: absolute;
     bottom: -20px;
     left: -50px;
     z-index: -1;
 }
+
 .icon-shape-3 {
     position: absolute;
     top: 70px;
     font-size: 80px;
-    color:#f2f2f2;
+    color: #f2f2f2;
     left: 0;
 }
+
 .icon-shape-4 {
     position: absolute;
     top: 50%;
     font-size: 80px;
-    color:#f2f2f2;
+    color: #f2f2f2;
     right: 0;
     animation: movebounce-in 6s linear infinite;
 }
+
 /*=================================
 Course Section End
 ====================================*/
@@ -1419,6 +1573,7 @@ Product Area
     background-color: #fffafa;
     overflow: hidden;
 }
+
 .product-item {
     margin-bottom: 30px;
     background-color: $color-white;
@@ -1428,11 +1583,13 @@ Product Area
     &:hover {
         transform: translateY(-5px);
     }
+
     a {
         img {
             max-width: 100%;
         }
     }
+
     .product-cotent {
         border-top: 1px solid #eeeeee;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -1447,10 +1604,12 @@ Product Area
 
             a {
                 padding: 0;
+
                 h3 {
                     font-size: 22px;
                 }
             }
+
             span {
                 font-size: 20px;
                 color: $main-color;
@@ -1461,6 +1620,7 @@ Product Area
                 line-height: 1;
             }
         }
+
         .add-product {
             position: absolute;
             top: 15px;
@@ -1478,12 +1638,14 @@ Product Area
             &:hover {
                 background-color: $main-color;
             }
+
             i {
                 list-style: 0;
             }
         }
     }
 }
+
 /*=================================
 Product Area End
 ====================================*/
@@ -1493,14 +1655,17 @@ Gallery Section
 ====================================*/
 .gallery-item {
     margin-bottom: 30px;
+
     a {
         img {
             max-width: 100%;
         }
     }
-    &:hover .gallery-text  h3{
+
+    &:hover .gallery-text h3 {
         color: $main-color;
     }
+
     .gallery-text {
         margin-top: -50px;
         position: relative;
@@ -1521,6 +1686,7 @@ Gallery Section
         }
     }
 }
+
 /*=================================
 Gallery Section End
 ====================================*/
@@ -1537,16 +1703,21 @@ Trainers Section
         padding-top: 17px;
         padding-bottom: 40px;
     }
+
     &:hover .social-icon {
         opacity: 1;
     }
+
     &:hover .content::before {
         opacity: 1;
         height: 100%;
-    } 
-    &:hover .content h3,  &:hover .content span {
+    }
+
+    &:hover .content h3,
+    &:hover .content span {
         color: $color-white;
-    } 
+    }
+
     .trainer-content {
         position: relative;
         max-width: 240px;
@@ -1564,9 +1735,11 @@ Trainers Section
             padding-top: 17px;
             padding-bottom: 40px;
         }
+
         &.active .social-icon {
             opacity: 1;
         }
+
         a {
             display: block;
 
@@ -1576,6 +1749,7 @@ Trainers Section
                 color: $color-black;
             }
         }
+
         span {
             font-size: 14px;
             color: $color-black;
@@ -1583,6 +1757,7 @@ Trainers Section
             line-height: 1;
         }
     }
+
     .social-icon {
         opacity: 0;
         position: absolute;
@@ -1594,6 +1769,7 @@ Trainers Section
         &.active {
             opacity: 1;
         }
+
         ul {
             list-style: none;
             padding: 0;
@@ -1617,12 +1793,14 @@ Trainers Section
                         color: $color-white;
                     }
                 }
+
                 &:hover {
                     background-color: $main-color;
                 }
             }
         }
     }
+
     .content {
         position: relative;
         z-index: 1;
@@ -1651,6 +1829,7 @@ Trainers Section
             transition: 0.7s;
             border-radius: 0 0 10px 10px;
         }
+
         a {
             display: block;
 
@@ -1660,6 +1839,7 @@ Trainers Section
                 color: $color-black;
             }
         }
+
         span {
             font-size: 14px;
             color: $color-black;
@@ -1668,6 +1848,7 @@ Trainers Section
         }
     }
 }
+
 /*=================================
 Trainers Section End
 ====================================*/
@@ -1683,9 +1864,10 @@ News Area
     &:hover .news-content a h3 {
         color: $main-color;
     }
+
     .news-img {
         position: relative;
-        
+
         a {
             display: block;
 
@@ -1693,6 +1875,7 @@ News Area
                 max-width: 100%;
             }
         }
+
         .sub-text {
             position: absolute;
             z-index: 1;
@@ -1709,6 +1892,7 @@ News Area
             }
         }
     }
+
     ul {
         list-style: none;
         margin: 10px 0 0 0;
@@ -1733,14 +1917,17 @@ News Area
                 left: -15px;
                 top: 10px;
             }
+
             &:first-child::before {
                 display: none;
             }
+
             a {
                 color: $color-blue;
             }
         }
     }
+
     .news-content {
         padding: 10px 20px 20px 20px;
 
@@ -1750,15 +1937,17 @@ News Area
                 transition: 0.7s;
             }
         }
+
         p {
             color: $body-color;
             margin: 0;
         }
+
         .news-icon {
             margin-top: 8px;
             font-weight: 600;
             color: $body-color;
-            
+
             &:hover {
                 color: $main-color;
                 letter-spacing: .5px;
@@ -1766,6 +1955,7 @@ News Area
         }
     }
 }
+
 /*=================================
 News Area End
 ====================================*/
@@ -1789,6 +1979,7 @@ Footer Area End
         background-repeat: no-repeat;
     }
 }
+
 .footer-content {
     position: relative;
     margin-bottom: 30px;
@@ -1800,12 +1991,14 @@ Footer Area End
             max-width: 270px;
         }
     }
+
     .newsleter-area {
         h3 {
             font-size: 24px;
             color: $main-color;
             margin-bottom: 15px;
         }
+
         .newsletter-form {
             position: relative;
             max-width: 300px;
@@ -1824,6 +2017,7 @@ Footer Area End
                     border: none;
                 }
             }
+
             .subscribe-btn {
                 position: absolute;
                 top: 0;
@@ -1841,10 +2035,11 @@ Footer Area End
                 &:hover {
                     background: $color-blue;
                     color: $color-white;
-                }                  
+                }
             }
         }
     }
+
     .footer-social {
         margin-top: 20px;
 
@@ -1866,6 +2061,7 @@ Footer Area End
                     background-color: $main-color;
                     border-radius: 50%;
                 }
+
                 a {
                     color: $color-white;
                     line-height: 40px;
@@ -1874,6 +2070,7 @@ Footer Area End
         }
     }
 }
+
 .footer-list {
     margin-bottom: 30px;
 
@@ -1894,6 +2091,7 @@ Footer Area End
             background-color: $color-blue;
         }
     }
+
     ul {
         list-style: none;
         margin: 0;
@@ -1908,6 +2106,7 @@ Footer Area End
             &:hover {
                 color: $main-color;
             }
+
             i {
                 width: 30px;
                 height: 30px;
@@ -1919,11 +2118,13 @@ Footer Area End
                 border-radius: 3px;
                 transition: 0.7s;
             }
+
             &:hover i {
                 border-radius: 50%;
                 color: $color-white;
                 background-color: $main-color;
             }
+
             a {
                 color: $color-white;
 
@@ -1938,11 +2139,13 @@ Footer Area End
                     border-radius: 3px;
                     transition: 0.7s;
                 }
+
                 &:hover i {
                     border-radius: 50%;
                     color: $color-white;
                     background-color: $main-color;
                 }
+
                 &:hover {
                     color: $main-color;
                 }
@@ -1950,18 +2153,23 @@ Footer Area End
         }
     }
 }
+
 .footer-area .footer-content .newsletter-area .newsletter-form ::-webkit-input-placeholder {
     color: $color-black;
 }
+
 .footer-area .footer-content .newsletter-area .newsletter-form :-ms-input-placeholder {
     color: $color-black;
 }
+
 .footer-area .footer-content .newsletter-area .newsletter-form ::-ms-input-placeholder {
     color: $color-black;
 }
+
 .footer-area .footer-content .newsletter-area .newsletter-form ::placeholder {
     color: $color-black;
 }
+
 .footer-bottom {
     border-top: 1px solid $paragraph-color;
     padding: 20px 0;
@@ -1978,6 +2186,7 @@ Footer Area End
 
                 a {
                     color: $color-white;
+
                     &:hover {
                         color: $main-color;
                     }
@@ -1985,8 +2194,9 @@ Footer Area End
             }
         }
     }
+
     .bottom-text {
-        text-align:center;
+        text-align: center;
         font-weight: 700;
 
         p {
@@ -2028,7 +2238,7 @@ Nav Top CSS
     right: 0;
     background-color: $color-white;
     border-radius: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0,.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 
     .navbar-light {
         .navbar-brand {
@@ -2039,6 +2249,7 @@ Nav Top CSS
         }
     }
 }
+
 /*================================
 Nav Top CSS End
 ==================================*/
@@ -2050,6 +2261,7 @@ Banner Area
     height: 750px;
     background-color: #f9f9f9;
 }
+
 .banner-content {
     padding-top: 70px;
     max-width: 530px;
@@ -2061,10 +2273,12 @@ Banner Area
         max-width: 520px;
         font-weight: 500;
     }
+
     p {
         margin-top: 24px;
         max-width: 540px;
     }
+
     .banner-btn {
         margin-top: 41px;
         margin-bottom: 10px;
@@ -2077,7 +2291,7 @@ Banner Area
             padding: 11px 30px 9px 30px;
             font-weight: 500;
             border-radius: 50px;
-            position: relative; 
+            position: relative;
             z-index: 1;
 
             &:hover {
@@ -2085,6 +2299,7 @@ Banner Area
                 background-color: $color-blue;
             }
         }
+
         .banner-btn2 {
             color: $color-white;
             text-align: center;
@@ -2101,6 +2316,7 @@ Banner Area
         }
     }
 }
+
 .banner-img {
     text-align: right;
     margin-top: -20px;
@@ -2109,6 +2325,7 @@ Banner Area
         height: 770px;
     }
 }
+
 /*================================
 Banner Area End
 ==================================*/
@@ -2120,6 +2337,7 @@ About Another
     position: relative;
     margin-bottom: 30px;
 }
+
 .icon-shape-5 {
     position: absolute;
     top: 95px;
@@ -2127,6 +2345,7 @@ About Another
     font-size: 80px;
     color: $main-color;
 }
+
 .icon-shape-6 {
     position: absolute;
     bottom: 30px;
@@ -2134,6 +2353,7 @@ About Another
     font-size: 80px;
     color: $color-blue;
 }
+
 .about-content {
     margin-left: 70px;
     margin-bottom: 30px;
@@ -2143,18 +2363,22 @@ About Another
         color: $main-color;
         font-weight: 600;
     }
+
     h2 {
         font-size: 35px;
         margin-top: 2px;
     }
+
     p {
         max-width: 640px;
         margin-top: 10px;
     }
+
     .about-more-btn {
-        margin-top:25px;
+        margin-top: 25px;
     }
 }
+
 /*================================
 About Another
 ==================================*/
@@ -2167,6 +2391,7 @@ Visit Btn
     position: relative;
     z-index: 1;
 }
+
 .visit-btn {
     text-align: center;
     font-size: 25px;
@@ -2186,6 +2411,7 @@ Visit Btn
         }
     }
 }
+
 /*================================
 Visit Btn End
 ==================================*/
@@ -2199,6 +2425,7 @@ Apply Another
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 /*================================
 Apply Another End
 ==================================*/
@@ -2213,12 +2440,15 @@ Course Item
     &.active .couser-delt {
         opacity: 1;
     }
+
     &:hover .couser-delt {
         opacity: 1;
     }
+
     img {
         position: relative;
     }
+
     .couser-delt {
         opacity: 0;
         position: absolute;
@@ -2237,15 +2467,18 @@ Course Item
             font-size: 25px;
             color: $main-color;
         }
+
         p {
             color: $paragraph-color;
             max-width: 340px;
         }
+
         .course-delt-btn {
             margin-top: 10px;
         }
     }
 }
+
 /*================================
 Course Item End
 ==================================*/
@@ -2268,6 +2501,7 @@ Testimonial Area
         left: 0;
         right: 0;
     }
+
     .owl-theme {
         .owl-nav {
             z-index: 999;
@@ -2288,6 +2522,7 @@ Testimonial Area
                     color: $main-color;
                 }
             }
+
             .owl-next {
                 position: absolute;
                 background-color: transparent;
@@ -2301,6 +2536,7 @@ Testimonial Area
         }
     }
 }
+
 .testimonial-img {
     position: relative;
     margin-bottom: 30px;
@@ -2309,11 +2545,12 @@ Testimonial Area
         max-width: 320px;
         margin-left: 150px;
     }
-   .shape-img {
+
+    .shape-img {
         position: absolute;
         bottom: 0;
         left: 0;
-        right:50px;
+        right: 50px;
         z-index: -1;
 
         img {
@@ -2321,6 +2558,7 @@ Testimonial Area
         }
     }
 }
+
 .testimonial-item {
     text-align: center;
     margin-top: 70px;
@@ -2333,15 +2571,18 @@ Testimonial Area
         margin-left: auto;
         margin-right: auto;
     }
+
     h3 {
         font-size: 20px;
         color: $main-color;
         line-height: 0.3;
     }
+
     span {
         color: $color-white;
     }
 }
+
 /*================================
 Testimonial Area End
 ==================================*/
@@ -2365,6 +2606,7 @@ Inner Banner
             font-size: 45px;
             color: $main-color;
         }
+
         ul {
             list-style: none;
             padding: 0;
@@ -2377,11 +2619,13 @@ Inner Banner
                 margin-right: 15px;
 
                 &:last-child {
-                    margin-right: 0; 
+                    margin-right: 0;
                 }
+
                 i {
                     font-size: 16px;
                 }
+
                 a {
                     color: $color-white;
 
@@ -2393,6 +2637,7 @@ Inner Banner
         }
     }
 }
+
 .bg-shape1 {
     position: relative;
 
@@ -2407,6 +2652,7 @@ Inner Banner
         height: 100%;
     }
 }
+
 .bg-shape2 {
     position: relative;
 
@@ -2421,6 +2667,7 @@ Inner Banner
         height: 100%;
     }
 }
+
 .bg-shape3 {
     position: relative;
 
@@ -2435,38 +2682,47 @@ Inner Banner
         height: 100%;
     }
 }
+
 .bg-color1 {
     background-color: #07526a;
 }
+
 .bg-color2 {
-    background-color:#063264;
+    background-color: #063264;
 }
+
 .bg-color3 {
-    background-color:#264752;
+    background-color: #264752;
 }
+
 .bg-color4 {
-    background-color:#152f4c ;
+    background-color: #152f4c;
 }
+
 .bg-color5 {
-    background-color:#05162a ;
+    background-color: #05162a;
 }
+
 /*================================
 Inner Banner End
 ==================================*/
 .common-dtel-img {
     margin-bottom: 30px;
 }
+
 .common-dtel-text {
     h2 {
         font-size: 35px;
         max-width: 700px;
         margin-bottom: 20px;
     }
+
     p {
         max-width: 760px;
         font-size: 15px;
     }
 }
+
 .common-offer {
     background-color: $color-blue;
     width: 100%;
@@ -2480,6 +2736,7 @@ Inner Banner End
         right: 0;
         margin-bottom: 20px;
     }
+
     .common-offer-text {
         padding-bottom: 45px;
         text-align: center;
@@ -2488,6 +2745,7 @@ Inner Banner End
             font-size: 25px;
             text-align: center;
         }
+
         .call-btn {
             margin-top: 10px;
             color: $color-white;
@@ -2497,6 +2755,7 @@ Inner Banner End
             border-radius: 5px;
             text-align: center;
             transition: 0.7s;
+
             &:hover {
                 background-color: $color-white;
                 color: $main-color;
@@ -2516,6 +2775,7 @@ Contact Page
         margin: 0 auto;
     }
 }
+
 .contact-item {
     text-align: center;
     max-width: 100%;
@@ -2523,8 +2783,8 @@ Contact Page
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.1);
-    padding:50px 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 50px 25px;
     margin-bottom: 30px;
     border-radius: 15px;
 
@@ -2535,6 +2795,7 @@ Contact Page
             color: $body-color;
         }
     }
+
     .icon-contact {
         width: 50px;
         height: 50px;
@@ -2553,16 +2814,18 @@ Contact Page
         }
     }
 }
+
 .contact-img {
     margin-bottom: 30px;
 }
+
 .form-area {
     // // background-image: url(assets/img/shape/contact-dots.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px 40px;
-    box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     max-width: 770px;
     border-radius: 15px;
     margin-right: auto;
@@ -2575,6 +2838,7 @@ Contact Page
         padding: 13px 50px;
     }
 }
+
 .form-section {
     h2 {
         font-size: 32px;
@@ -2582,6 +2846,7 @@ Contact Page
         font-weight: 600;
         margin-bottom: 20px;
     }
+
     .form-group {
         margin-bottom: 30px;
 
@@ -2592,13 +2857,15 @@ Contact Page
             color: #b3b3b3;
             font-weight: 400;
 
-            &:focus,:hover {
+            &:focus,
+            :hover {
                 outline: 0;
                 box-shadow: none;
                 border: 1px solid $body-color;
             }
         }
     }
+
     .form-message {
         font-size: 16px;
         border: 1px solid #ffd3d3;
@@ -2608,25 +2875,31 @@ Contact Page
         font-weight: 400;
         width: 100%;
 
-        &:focus,:hover {
+        &:focus,
+        :hover {
             outline: 0;
             box-shadow: none;
             border: 1px solid $body-color;
         }
     }
 }
+
 .form-section .form-group .form-control::-webkit-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-section .form-group .form-control::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-section .form-group .form-control::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-section .form-group .form-control::placeholder {
     color: #b3b3b3;
 }
+
 .form-section .form-group .form-message::-webkit-input-placeholder {
     color: #b3b3b3;
 }
@@ -2634,12 +2907,15 @@ Contact Page
 .form-section .form-group .form-message::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-section .form-group .form-message::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-section .form-group .form-message::placeholder {
     color: #b3b3b3;
 }
+
 /*================================
 Contact Page  End
 ==================================*/
@@ -2651,7 +2927,7 @@ Widget Search
     margin-bottom: 30px;
     width: 100%;
     background-color: $color-white;
-    box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
     form {
         width: 100%;
@@ -2666,12 +2942,14 @@ Widget Search
             padding: 13px 18px;
             font-weight: 400;
 
-            &:focus,:hover {
+            &:focus,
+            :hover {
                 outline: 0;
                 box-shadow: none;
-                
+
             }
         }
+
         .search-btn {
             width: 45px;
             background-color: $color-blue;
@@ -2690,6 +2968,7 @@ Widget Search
                 box-shadow: none;
                 background-color: $main-color;
             }
+
             &:focus:hover {
                 outline: 0;
                 box-shadow: none;
@@ -2698,6 +2977,7 @@ Widget Search
         }
     }
 }
+
 /*================================
 Widget Search End
 ==================================*/
@@ -2711,7 +2991,8 @@ Widget Categories
     h2 {
         font-size: 24px;
     }
-    ul{
+
+    ul {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -2729,23 +3010,26 @@ Widget Categories
                 color: #909090;
                 padding: 12px 15px;
                 background-color: $color-white;
-                box-shadow: 0 0 15px  rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
                 &:hover {
                     background-color: $main-color;
                     color: $color-white;
                 }
+
                 i {
                     float: right;
                     line-height: 2;
                 }
             }
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
 }
+
 /*================================
 Widget Categories End
 ==================================*/
@@ -2769,13 +3053,16 @@ Pagination Area
         color: $color-blue;
         font-weight: 600;
         font-size: 16px;
-        box-shadow: 0 0 15px  rgba(0, 0, 0, 0.1);
-        
-        &.current, &:hover, &:focus {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+        &.current,
+        &:hover,
+        &:focus {
             background: $main-color;
             color: $color-white;
-            box-shadow: 0 0 15px  rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
         i {
             font-size: 15px;
         }
@@ -2793,6 +3080,7 @@ Faq Page CSS
     position: relative;
     margin-bottom: 30px;
 }
+
 .faq-area {
     max-width: 790px;
     margin: auto;
@@ -2812,6 +3100,7 @@ Faq Page CSS
             &:last-child {
                 margin-bottom: 0;
             }
+
             .accordion-title {
                 padding: 15px 20px;
                 color: $paragraph-color;
@@ -2834,6 +3123,7 @@ Faq Page CSS
                     transition: 0.5s;
                     font-size: 24px;
                 }
+
                 &.active {
                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
                     background-color: $color-white;
@@ -2845,9 +3135,10 @@ Faq Page CSS
                     }
                 }
             }
+
             .accordion-content {
                 display: none;
-                color:$paragraph-color;
+                color: $paragraph-color;
                 font-weight: 400;
                 margin-bottom: 0;
                 padding: 20px 15px;
@@ -2856,19 +3147,21 @@ Faq Page CSS
 
                 &.show {
                     display: block;
-                }                
+                }
             }
         }
     }
 }
+
 .faq-form {
     padding: 50px 30px;
     max-width: 790px;
     text-align: center;
-    margin:  auto;
-    box-shadow:0 0 15px  rgba(0, 0, 0, 0.1);
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
+
 /*==================================
 Faq Page CSS End
 ====================================*/
@@ -2879,12 +3172,14 @@ Shop Details page
 .shop-detls-image {
     margin-bottom: 30px;
 }
+
 .shop-desc {
     h3 {
         margin-bottom: 12px;
         font-size: 24px;
         font-weight: 600;
     }
+
     .price {
         margin-bottom: 10px;
         font-size: 15px;
@@ -2896,6 +3191,7 @@ Shop Details page
             margin-left: 10px;
         }
     }
+
     .shop-review {
         margin-bottom: 15px;
 
@@ -2908,22 +3204,25 @@ Shop Details page
                 color: $main-color;
             }
         }
+
         .rating-count {
             margin-left: 5px;
             display: inline-block;
-            color:  $color-black;
+            color: $color-black;
             border-bottom: 1px solid $color-black;
             line-height: initial;
 
             &:hover {
                 color: $main-color;
                 border-color: $main-color;
-            }              
+            }
         }
     }
+
     p {
         font-family: $body-font;
     }
+
     .shop-add {
         margin-top: 20px;
 
@@ -2951,12 +3250,15 @@ Shop Details page
                     color: $main-color;
                 }
             }
+
             .minus-btn {
                 left: 0;
             }
+
             .plus-btn {
                 right: 0;
             }
+
             input {
                 height: 45px;
                 color: $color-black;
@@ -2971,6 +3273,7 @@ Shop Details page
                 font-weight: 700;
             }
         }
+
         .shop-btn {
             border: none;
             background-color: $main-color;
@@ -2986,14 +3289,16 @@ Shop Details page
             }
         }
     }
+
     .buy-checkbox-btn {
         margin-top: 30px;
 
-        .item { 
+        .item {
             .inp-cbx {
                 width: 15px;
                 height: 16px;
             }
+
             .cbx {
                 span {
                     font-size: 20px;
@@ -3002,6 +3307,7 @@ Shop Details page
                 }
             }
         }
+
         .btn-buy {
             margin-top: 10px;
             margin-bottom: 10px;
@@ -3010,7 +3316,7 @@ Shop Details page
             border-radius: 50px;
             border: none;
             font-size: 18px;
-            padding: 13px  25px;
+            padding: 13px 25px;
             -webkit-transition: 0.5s;
             transition: 0.5s;
             font-weight: 600;
@@ -3022,6 +3328,7 @@ Shop Details page
             }
         }
     }
+
     .custom-payment {
         span {
             display: block;
@@ -3029,6 +3336,7 @@ Shop Details page
             margin-bottom: 20px;
             margin-top: 20px;
         }
+
         .payment-methods {
             a {
                 display: inline-block;
@@ -3040,18 +3348,23 @@ Shop Details page
         }
     }
 }
+
 .shop-detls .shop-add .input-counter input::-webkit-input-placeholder {
     color: $color-black;
 }
+
 .shop-detls .shop-add .input-counter input:-ms-input-placeholder {
     color: $color-black;
 }
+
 .shop-detls .shop-add .input-counter input::-ms-input-placeholder {
     color: $color-black;
 }
+
 .shop-detls-desc .shop-add-to-cart .input-counter input::placeholder {
     color: $color-black;
 }
+
 .tab {
     .tabs_item {
         display: none;
@@ -3062,6 +3375,7 @@ Shop Details page
     }
 
 }
+
 .shop-detls-tab {
     margin-top: 30px;
 
@@ -3085,15 +3399,17 @@ Shop Details page
 
                 &:focus {
                     color: $color-white;
-                    background-color:$main-color;
+                    background-color: $main-color;
                     border-color: $main-color;
                 }
             }
+
             &.active a {
                 color: $color-white;
                 background-color: $main-color;
                 border-color: $main-color;
             }
+
             &.current a {
                 color: $color-white;
                 background-color: $main-color;
@@ -3101,6 +3417,7 @@ Shop Details page
             }
         }
     }
+
     .tab_content {
         border: 1px dashed #eeeeee;
         padding: 30px;
@@ -3114,8 +3431,9 @@ Shop Details page
 
                     &:last-child {
                         margin-bottom: 0;
-                    }                      
+                    }
                 }
+
                 .additional-information {
                     padding-left: 0;
                     margin-bottom: 0;
@@ -3131,6 +3449,7 @@ Shop Details page
                         &:last-child {
                             border-bottom: 1px solid #eeeeee;
                         }
+
                         span {
                             display: inline-block;
                             width: 30%;
@@ -3139,11 +3458,13 @@ Shop Details page
                         }
                     }
                 }
+
                 h3 {
                     margin-bottom: 15px;
                     font-size: 24px;
                     color: $color-black;
                 }
+
                 .shop-review-form {
                     .review-title {
                         position: relative;
@@ -3154,18 +3475,21 @@ Shop Details page
                             .fas.fa-star {
                                 color: $main-color;
                             }
+
                             i {
                                 color: #ebebeb;
                                 font-size: 14px;
                             }
+
                             p {
                                 margin-bottom: 0;
                                 font-family: $body-font;
                                 display: inline-block;
                                 padding-left: 5px;
                                 line-height: initial;
-                            }                         
+                            }
                         }
+
                         .btn-right {
                             position: absolute;
                             right: 0;
@@ -3180,8 +3504,9 @@ Shop Details page
                                 background-color: $color-blue;
                                 color: $color-white;
                             }
-                        }   
+                        }
                     }
+
                     .review-comments {
                         margin-top: 35px;
 
@@ -3192,21 +3517,24 @@ Shop Details page
                             border-top: 1px dashed #eeeeee;
                             padding-top: 30px;
 
-                            .rating  {
+                            .rating {
                                 .fas.fa-star {
                                     color: $main-color;
                                 }
+
                                 i {
                                     color: #ebebeb;
                                     font-size: 14px;
                                 }
                             }
+
                             h3 {
                                 font-size: 24px;
                                 margin-top: 10px;
                                 margin-bottom: 10px;
                                 color: $color-black;
                             }
+
                             span {
                                 margin-bottom: 10px;
                                 font-size: 16px;
@@ -3215,12 +3543,14 @@ Shop Details page
 
                                 strong {
                                     font-weight: 600;
-                                } 
+                                }
                             }
+
                             p {
                                 margin-bottom: 0;
                                 font-family: $body-font;
                             }
+
                             .review-report-link {
                                 position: absolute;
                                 right: 0;
@@ -3232,22 +3562,25 @@ Shop Details page
 
                                 &:hover {
                                     color: $main-color;
-                                }                                  
-                            }      
-                        }                          
+                                }
+                            }
+                        }
                     }
+
                     .review-form {
                         margin-top: 30px;
 
                         h3 {
                             margin-bottom: 20px;
                         }
+
                         form {
                             max-width: 800px;
 
                             .form-group {
                                 margin-bottom: 25px;
                             }
+
                             .form-control {
                                 font-size: 16px;
                                 border: 1px solid #ffd3d3;
@@ -3255,12 +3588,14 @@ Shop Details page
                                 border-radius: 0;
                                 font-weight: 400;
 
-                                &:focus,:hover {
+                                &:focus,
+                                :hover {
                                     outline: 0;
                                     box-shadow: none;
                                     border: 1px solid $body-color;
                                 }
                             }
+
                             .form-message {
                                 font-size: 16px;
                                 border: 1px solid #ffd3d3;
@@ -3269,12 +3604,14 @@ Shop Details page
                                 font-weight: 400;
                                 width: 100%;
 
-                                &:focus,:hover {
+                                &:focus,
+                                :hover {
                                     outline: 0;
                                     box-shadow: none;
                                     border: 1px solid $body-color;
                                 }
                             }
+
                             .btn-submit {
                                 border-radius: 5px;
                                 background-color: $main-color;
@@ -3290,9 +3627,11 @@ Shop Details page
                                     width: 100%;
                                     border-radius: 5px;
                                 }
+
                                 &:focus {
                                     outline: 0;
                                 }
+
                                 &::before {
                                     content: '';
                                     position: absolute;
@@ -3308,20 +3647,21 @@ Shop Details page
                                 }
                             }
                         }
-                    }  
-                } 
+                    }
+                }
             }
         }
     }
 }
+
 /*==================================
 Shop Details page End
-====================================*/ 
+====================================*/
 
 /*=================================
 Cart Page 
 ===================================*/
-.cart-area{
+.cart-area {
     .cart-table {
         table {
             margin-bottom: 0;
@@ -3339,6 +3679,7 @@ Cart Page
                     }
                 }
             }
+
             tbody {
                 tr {
                     td {
@@ -3361,6 +3702,7 @@ Cart Page
                                 }
                             }
                         }
+
                         &.product-name {
                             a {
                                 color: $head-color;
@@ -3373,6 +3715,7 @@ Cart Page
                                 }
                             }
                         }
+
                         &.product-subtotal {
                             .remove {
                                 color: $head-color;
@@ -3385,14 +3728,17 @@ Cart Page
                                 i {
                                     font-size: 24px;
                                 }
+
                                 &:hover {
                                     color: $main-color;
                                 }
                             }
+
                             span {
                                 font-weight: 600;
                             }
                         }
+
                         &.product-quantity {
                             .input-counter {
                                 max-width: 130px;
@@ -3416,6 +3762,7 @@ Cart Page
                                         color: $body-color !important;
                                     }
                                 }
+
                                 .minus-btn {
                                     left: 0;
 
@@ -3423,6 +3770,7 @@ Cart Page
                                         color: $body-color !important;
                                     }
                                 }
+
                                 .plus-btn {
                                     right: 0;
 
@@ -3430,6 +3778,7 @@ Cart Page
                                         color: $body-color !important;
                                     }
                                 }
+
                                 input {
                                     height: 45px;
                                     color: $color-black;
@@ -3449,9 +3798,11 @@ Cart Page
             }
         }
     }
+
     .cart-buttons {
         margin-top: 30px;
     }
+
     .cart-totals {
         background: $color-white;
         padding: 40px;
@@ -3465,6 +3816,7 @@ Cart Page
             font-size: 24px;
             margin-bottom: 25px;
         }
+
         ul {
             padding: 0;
             margin: 0 0 25px;
@@ -3480,12 +3832,15 @@ Cart Page
                 &:first-child {
                     border-bottom: none;
                 }
+
                 &:nth-child(3) {
                     border-top: none;
                 }
+
                 &:last-child {
                     border-top: none;
                 }
+
                 span {
                     float: right;
                     color: $head-color;
@@ -3494,6 +3849,7 @@ Cart Page
             }
         }
     }
+
     .cart-calc {
         margin-top: 50px;
         background-color: $color-white;
@@ -3506,6 +3862,7 @@ Cart Page
                 color: $body-color;
                 padding-bottom: 20px;
             }
+
             .form-group {
                 margin-bottom: 20px;
 
@@ -3516,11 +3873,13 @@ Cart Page
                     border: 1px solid #ffd3d3;
                     border-radius: 5px;
 
-                    &:focus,:hover {
+                    &:focus,
+                    :hover {
                         outline: 0;
                         box-shadow: none;
                         border: 1px solid $body-color;
                     }
+
                     option {
                         padding: 10px;
 
@@ -3529,6 +3888,7 @@ Cart Page
                         }
                     }
                 }
+
                 .form-control {
                     font-size: 16px;
                     border: 1px solid #ffd3d3;
@@ -3536,7 +3896,8 @@ Cart Page
                     padding: 25px 18px;
                     font-weight: 400;
 
-                    &:focus,:hover {
+                    &:focus,
+                    :hover {
                         outline: 0;
                         box-shadow: none;
                         border: 1px solid $body-color;
@@ -3546,30 +3907,39 @@ Cart Page
         }
     }
 }
+
 .cart-area .cart-table table tbody tr td.product-quantity .input-counter input::-webkit-input-placeholder {
     color: $color-black;
 }
+
 .cart-area .cart-table table tbody tr td.product-quantity .input-counter input:-ms-input-placeholder {
     color: $color-black;
 }
+
 .cart-area .cart-table table tbody tr td.product-quantity .input-counter input::-ms-input-placeholder {
     color: $color-black;
 }
+
 .cart-area .cart-table table tbody tr td.product-quantity .input-counter input::placeholder {
     color: $color-black;
 }
+
 .cart-area .cart-area .cart-calc .shops-form form .form-control input::-webkit-input-placeholder {
     color: #6c777d;
 }
+
 .cart-area .cart-calc .shops-form form .form-control input:-ms-input-placeholder {
     color: #6c777d;
 }
+
 .cart-area .cart-area .cart-calc .shops-form form .form-control input::-ms-input-placeholder {
     color: #6c777d;
 }
+
 .cart-area .cart-area .cart-calc .shops-form .form-control input::placeholder {
-    color:#495057;
+    color: #495057;
 }
+
 /*=================================
 Cart Page End
 ===================================*/
@@ -3600,6 +3970,7 @@ Checkout Page
         }
     }
 }
+
 .billing-details {
     margin-bottom: 30px;
     background-color: $color-white;
@@ -3612,6 +3983,7 @@ Checkout Page
         margin-bottom: 15px;
         font-weight: 700;
     }
+
     .form-group {
         margin-bottom: 25px;
 
@@ -3625,19 +3997,22 @@ Checkout Page
                 color: $main-color;
             }
         }
+
         .form-control {
             font-size: 16px;
             border: 1px solid #ffd3d3;
             padding: 15px 18px;
             font-weight: 400;
             height: 55px;
-            
-            &:focus,:hover {
+
+            &:focus,
+            :hover {
                 outline: 0;
                 box-shadow: none;
                 border: 1px solid $body-color;
             }
         }
+
         .form-message {
             font-size: 16px;
             border: 1px solid #ffd3d3;
@@ -3645,13 +4020,15 @@ Checkout Page
             font-weight: 400;
             width: 100%;
 
-            &:focus,:hover {
+            &:focus,
+            :hover {
                 outline: 0;
                 box-shadow: none;
                 border: 1px solid $body-color;
             }
         }
     }
+
     .form-check {
         margin-bottom: 15px;
 
@@ -3659,12 +4036,14 @@ Checkout Page
             width: 15px;
             height: 15px;
         }
+
         .form-check-label {
             color: $color-black;
             margin-left: 5px;
-        } 
+        }
     }
 }
+
 .order-details {
     .order-table {
         background-color: $color-white;
@@ -3676,9 +4055,10 @@ Checkout Page
             font-weight: 700;
             margin-bottom: 20px;
         }
+
         table {
             margin-bottom: 0;
-            
+
             thead {
                 tr {
                     th {
@@ -3695,6 +4075,7 @@ Checkout Page
                     }
                 }
             }
+
             tbody {
                 tr {
                     td {
@@ -3718,6 +4099,7 @@ Checkout Page
                                 }
                             }
                         }
+
                         &.order-subtotal {
                             span {
                                 color: $color-black;
@@ -3725,51 +4107,59 @@ Checkout Page
                                 font-size: 16px;
                             }
                         }
+
                         &.order-shipping {
                             span {
-                                color:$color-black;
+                                color: $color-black;
                                 font-weight: 700;
                                 font-size: 16px;
                             }
                         }
+
                         &.total-price {
                             span {
-                                color:$color-black;
+                                color: $color-black;
                                 font-weight: 700;
                                 font-size: 16px;
                             }
-                        } 
+                        }
+
                         &.shipping-price {
                             font-size: 16px;
                             font-weight: 700;
                         }
+
                         &.order-subtotal-price {
                             font-size: 16px;
                             font-weight: 700;
                         }
+
                         &.product-subtotal {
                             font-size: 16px;
                             font-weight: 700;
-                        }                          
-                    } 
+                        }
+                    }
                 }
             }
-        }          
+        }
     }
+
     .payment-box {
         background-color: $color-white;
         box-shadow: 0 5px 28px rgba(0, 0, 0, 0.07);
         margin-top: 30px;
         margin-bottom: 30px;
-        padding:50px 30px;
+        padding: 50px 30px;
 
         .payment-method {
             p {
                 font-family: $body-font;
             }
+
             p [type="radio"]:checked {
                 display: none;
             }
+
             p [type="radio"]:checked + label {
                 padding-left: 27px;
                 cursor: pointer;
@@ -3790,6 +4180,7 @@ Checkout Page
                     border-radius: 50%;
                     background: $color-white;
                 }
+
                 &::after {
                     content: '';
                     width: 12px;
@@ -3804,11 +4195,13 @@ Checkout Page
                     opacity: 1;
                     visibility: visible;
                     transform: scale(1);
-                }                
+                }
             }
+
             p [type="radio"]:not(:checked) {
                 display: none;
             }
+
             p [type="radio"]:not(:checked) + label {
                 padding-left: 27px;
                 cursor: pointer;
@@ -3829,6 +4222,7 @@ Checkout Page
                     border-radius: 50%;
                     background: $color-white;
                 }
+
                 &::after {
                     content: '';
                     width: 12px;
@@ -3843,9 +4237,10 @@ Checkout Page
                     opacity: 0;
                     visibility: hidden;
                     transform: scale(0);
-                }     
+                }
             }
         }
+
         .default-btn3 {
             margin-top: 20px;
             display: block;
@@ -3854,10 +4249,14 @@ Checkout Page
         }
     }
 }
-.billing-details .form-group .nice-select .option:hover,  .billing-details .form-group .nice-select .option.focus, .billing-details .form-group .nice-select .option.selected.focus {
-    background-color:$main-color !important;
+
+.billing-details .form-group .nice-select .option:hover,
+.billing-details .form-group .nice-select .option.focus,
+.billing-details .form-group .nice-select .option.selected.focus {
+    background-color: $main-color !important;
     color: $color-white !important;
 }
+
 /*=================================
 Checkout Page End
 ===================================*/
@@ -3868,17 +4267,20 @@ Instructor Page
 .instructor-img {
     margin-bottom: 30px;
 }
+
 .instructor-content {
     margin-bottom: 30px;
 
     h3 {
         font-size: 30px;
     }
+
     span {
         font-size: 20px;
         color: $main-color;
         line-height: 0.5;
     }
+
     .instructor-social {
         list-style: none;
         margin: 0;
@@ -3896,7 +4298,7 @@ Instructor Page
             background-color: $main-color;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             transition: 0.7s;
-            
+
             a {
                 color: $color-white;
 
@@ -3904,19 +4306,23 @@ Instructor Page
                     color: $color-white;
                 }
             }
+
             &:hover {
                 background-color: $color-blue;
                 border-radius: 50px;
             }
         }
     }
+
     p {
         margin-bottom: 25px;
     }
 }
+
 .instructor-all {
     background-color: #fffafa;
 }
+
 /*=================================
 Instructor Page End
 ===================================*/
@@ -3939,22 +4345,25 @@ Testominal Page
         border: 2px solid $color-blue;
         margin-bottom: 15px;
     }
+
     h3 {
         font-size: 24px;
         font-weight: 600;
         margin: 0;
         padding: 0;
     }
+
     span {
         color: $head-color;
         font-size: 16px;
     }
+
     p {
         font-weight: 500;
         margin-bottom: 15px;
         margin-top: 15px;
     }
-   
+
     ul {
         list-style: none;
         margin: 0;
@@ -3962,11 +4371,12 @@ Testominal Page
 
         li {
             display: inline-block;
-            color:$main-color;
+            color: $main-color;
             font-size: 20px;
         }
     }
 }
+
 /*=================================
 Testominal Page End
 ===================================*/
@@ -3984,6 +4394,7 @@ Book Form
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 /*=================================
 Book Form End
 ===================================*/
@@ -4001,6 +4412,7 @@ form Sing
             margin-bottom: 10px;
             font-weight: 600;
         }
+
         .form-control {
             font-size: 16px;
             border: 1px solid #ffd3d3;
@@ -4009,12 +4421,14 @@ form Sing
             font-weight: 400;
             height: 55px;
 
-            &:focus,:hover {
+            &:focus,
+            :hover {
                 outline: 0;
                 box-shadow: none;
                 border: 1px solid $body-color;
             }
         }
+
         .form-message {
             font-size: 16px;
             border-radius: 5px;
@@ -4024,7 +4438,8 @@ form Sing
             font-weight: 400;
             width: 100%;
 
-            &:focus,:hover {
+            &:focus,
+            :hover {
                 outline: 0;
                 box-shadow: none;
                 border: 1px solid $body-color;
@@ -4032,16 +4447,19 @@ form Sing
         }
     }
 }
+
 .form-sign {
-    .form-group { 
+    .form-group {
         .form-check-input {
             width: 15px;
             height: 15px;
         }
+
         .form-check-label {
             font-size: 16px;
         }
     }
+
     .login-btn {
         color: $color-white;
         font-size: 18px;
@@ -4058,30 +4476,39 @@ form Sing
         }
     }
 }
+
 .form-sign .form-group .form-control::-webkit-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-sign .form-group .form-control::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-sign .form-group .form-control::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-sign .form-group .form-control::placeholder {
     color: #b3b3b3;
 }
+
 .form-sign .form-group .form-message::-webkit-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-sign .form-group .form-message::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-sign.form-group .form-message::-ms-input-placeholder {
     color: #b3b3b3;
 }
+
 .form-sign .form-group .form-message::placeholder {
     color: #b3b3b3;
 }
+
 /*=================================
 form Sing End
 ===================================*/
@@ -4112,6 +4539,7 @@ Login form
             text-align: center;
             border-radius: 50px;
         }
+
         h3 {
             font-size: 24px;
             color: $body-color;
@@ -4120,6 +4548,7 @@ Login form
             margin-bottom: 30px;
         }
     }
+
     p {
         text-align: center;
         margin-top: 10px;
@@ -4133,6 +4562,7 @@ Login form
         }
     }
 }
+
 /*=================================
 Login form End
 ===================================*/
@@ -4156,6 +4586,7 @@ Register form
         color: $body-color;
         margin-bottom: 30px;
     }
+
     p {
         margin-top: 15px;
         color: $body-color;
@@ -4170,6 +4601,7 @@ Register form
         }
     }
 }
+
 /*=================================
 Register form End
 ===================================*/
@@ -4190,15 +4622,17 @@ Register form End
             color: $body-color;
 
             span {
-                
+
                 color: $main-color;
             }
         }
+
         h3 {
             margin: 30px 0 0;
             position: relative;
             color: $main-color;
         }
+
         p {
             margin: 20px 0 20px;
             font-size: 18px;
@@ -4208,6 +4642,7 @@ Register form End
         }
     }
 }
+
 /*=================================
 404 Error page End
 ===================================*/
@@ -4220,6 +4655,7 @@ Single Content CSS
         font-size: 24px;
         margin-bottom: 10px;
     }
+
     p {
         margin-bottom: 15px;
 
@@ -4228,6 +4664,7 @@ Single Content CSS
         }
     }
 }
+
 /*==================================
 Single Content CSS End
 ====================================*/
@@ -4242,15 +4679,19 @@ Gallery Page CSS
     img {
         width: 100%;
     }
+
     &:hover .single-icon {
         transform: scale(1);
     }
+
     &:hover .gallery-content {
         transform: scale(1);
     }
+
     &:hover img {
         filter: brightness(0.5);
     }
+
     .single-icon {
         position: absolute;
         text-align: center;
@@ -4274,6 +4715,7 @@ Gallery Page CSS
             color: $color-white;
         }
     }
+
     .gallery-content {
         background-color: $color-white;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -4293,6 +4735,7 @@ Gallery Page CSS
         }
     }
 }
+
 /*==================================
 Gallery Page CSS End
 ====================================*/
@@ -4308,6 +4751,7 @@ Courses Page CSS
         border-radius: 5px 5px 0 0;
         position: relative;
     }
+
     .course-price {
         position: absolute;
         bottom: 70px;
@@ -4324,6 +4768,7 @@ Courses Page CSS
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 }
+
 .courses-card-item {
     margin-bottom: 30px;
     background-color: $color-white;
@@ -4335,6 +4780,7 @@ Courses Page CSS
                 width: 100%;
             }
         }
+
         .courses-card-text {
             margin-top: -59px;
             position: relative;
@@ -4349,6 +4795,7 @@ Courses Page CSS
             background-color: $color-white;
         }
     }
+
     ul {
         list-style: none;
         margin: 0;
@@ -4372,11 +4819,13 @@ Courses Page CSS
                 left: -15px;
                 top: 10px;
             }
+
             &:first-child::before {
                 display: none;
             }
         }
     }
+
     .courses-card-content {
         padding: 20px;
 
@@ -4385,9 +4834,11 @@ Courses Page CSS
                 font-size: 24px;
             }
         }
+
         p {
             color: $body-color;
         }
+
         .course-book-btn {
             background-color: $main-color;
             color: $color-white;
@@ -4402,6 +4853,7 @@ Courses Page CSS
         }
     }
 }
+
 /*==================================
 Courses Page CSS End
 ====================================*/
@@ -4428,34 +4880,37 @@ Pricing Page CSS
                 font-size: 35px;
             }
         }
+
         span {
             font-size: 24px;
         }
     }
+
     .price-list {
-    //    // background-image: url(assets/img/shape/contact-shape.png);
-       background-position: center center;
-       background-size: cover;
-       background-repeat: no-repeat;
-       padding: 50px 40px;
+        //    // background-image: url(assets/img/shape/contact-shape.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 40px;
 
-       ul {
-           list-style: none;
-           margin: 0;
-           padding: 0;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
 
-           li {
-               display: block;
-               font-size: 18px;
-               margin-bottom: 15px;
+            li {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 15px;
 
                 i {
-                   font-size: 20px;
-                   color: $main-color;
-                   margin-right: 10px;
+                    font-size: 20px;
+                    color: $main-color;
+                    margin-right: 10px;
                 }
             }
         }
+
         .price-btn {
             padding: 10px 25px;
             color: $color-white;
@@ -4473,6 +4928,7 @@ Pricing Page CSS
         }
     }
 }
+
 /*==================================
 Pricing Page CSS End
 ====================================*/
@@ -4488,6 +4944,7 @@ Pricing Page CSS End
         border-bottom: 1px solid #e1e1e1;
         padding-bottom: 15px;
     }
+
     h3 {
         font-size: 18px;
         color: $head-color;
@@ -4498,6 +4955,7 @@ Pricing Page CSS End
             color: $main-color;
         }
     }
+
     span {
         color: $color-blue;
         font-size: 14px;
@@ -4509,22 +4967,27 @@ Pricing Page CSS End
             color: $color-blue;
         }
     }
+
     .post-item1 {
         margin-top: 10px;
     }
+
     .post-item2 {
         margin-top: 10px;
     }
+
     .post-item3 {
         margin-top: 10px;
     }
 }
+
 .nuva-tag {
     h3 {
         font-size: 24px;
         font-weight: 600;
         color: $color-black;
     }
+
     ul {
         margin: 0;
         padding: 0;
@@ -4539,7 +5002,7 @@ Pricing Page CSS End
                 color: #4f4f4f;
                 background-color: #f7f7f7;
                 padding: 10px 25px;
-                margin:  5px;
+                margin: 5px;
                 border-radius: 3px;
                 transition: 0.9s;
 
@@ -4551,6 +5014,7 @@ Pricing Page CSS End
         }
     }
 }
+
 .news-comments {
     margin-top: 30px;
     padding: 30px;
@@ -4562,6 +5026,7 @@ Pricing Page CSS End
             font-size: 30px;
         }
     }
+
     .news-comments-card {
         margin-top: 15px;
         border-bottom: 1px solid #e1e1e1;
@@ -4578,6 +5043,7 @@ Pricing Page CSS End
                 margin-bottom: 15px;
             }
         }
+
         .comments-title {
             display: inline-block;
 
@@ -4586,10 +5052,12 @@ Pricing Page CSS End
                 color: $paragraph-color;
                 margin: 0;
             }
+
             span {
                 font-size: 12px;
             }
         }
+
         .reply-btn {
             background-color: transparent;
             padding: 5px 7px;
@@ -4608,6 +5076,7 @@ Pricing Page CSS End
         }
     }
 }
+
 .news-detl-contact {
     margin-top: 30px;
 
@@ -4615,6 +5084,7 @@ Pricing Page CSS End
         margin-top: -10px;
     }
 }
+
 /*==================================
 Animation CSS
 ====================================*/
@@ -4623,15 +5093,18 @@ Animation CSS
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
+
     50% {
         -webkit-transform: translateY(5px);
         transform: translateY(5px);
     }
+
     100% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
 }
+
 @keyframes wave-circle {
     0% {
         -webkit-transform: scale(0, 0);
@@ -4639,6 +5112,7 @@ Animation CSS
         opacity: 0.5;
         filter: alpha(opacity=50);
     }
+
     100% {
         -webkit-transform: scale(1, 1);
         transform: scale(1, 1);
@@ -4646,12 +5120,14 @@ Animation CSS
         filter: alpha(opacity=0);
     }
 }
+
 @-webkit-keyframes wave-circle {
     0% {
         -webkit-transform: scale(0, 0);
         opacity: 0.5;
         filter: alpha(opacity=50);
     }
+
     100% {
         -webkit-transform: scale(1, 1);
         opacity: 0;
@@ -4660,15 +5136,18 @@ Animation CSS
 }
 
 @keyframes scale {
+
     0%,
     35% {
         transform: scale(0);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.2);
         opacity: 0.8;
     }
+
     100% {
         opacity: 0;
         transform: scale(1.5);
@@ -4680,15 +5159,18 @@ Animation CSS
         -webkit-transform: translateX(0px);
         transform: translateX(0px);
     }
+
     50% {
         -webkit-transform: translateX(70px);
         transform: translateX(70px);
     }
+
     100% {
         -webkit-transform: translateX(0px);
         transform: translateX(0px);
     }
 }
+
 /*==================================
 Animation CSS
 =====================================*/
@@ -4696,45 +5178,48 @@ Animation CSS
 .card-home {
     min-width: 100px;
     max-width: 400px;
-    min-height: 180px;
-    max-height: 180px;
+    min-height: 400px;
+    max-height: 400px;
     transition: 0.5s ease;
-    overflow-y: hidden; /* Default: No scroll on desktop */
-}
+    overflow-y: hidden;
+    background: none;
+    box-shadow: none;
+    border: none;
+    text-align: center !important;
 
-/* Enables scrolling only on mobile & tablet */
-@media (max-width: 991px) { 
-    .card-home {
-        overflow-y: scroll; /* Enables vertical scrolling */
-        max-height: 300px; /* Allow card to expand on mobile if needed */
+    & i {
+        font-size: 65px !important;
+        padding: 10px;
+        color: $main-color
     }
+
+    /* Default: No scroll on desktop */
 }
 
 /* Hover effect remains unchanged */
 .card-home:hover {
-    min-height: 190px;
+    min-height: 310px;
     background-color: $main-color;
     color: $color-white;
+    & i{
+         color: $color-white;
+    }
 }
 
 
-.cust-container-1 {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 5px;
-    margin-bottom: 100px;
+/* Enables scrolling only on mobile & tablet */
+@media (max-width: 991px) {
+    .card-home {
+        overflow-y: scroll;
+        /* Enables vertical scrolling */
+        max-height: 300px;
+        /* Allow card to expand on mobile if needed */
+
+    }
 }
 
-.features-section {
-    background-color: #ffffff; /* white */
-}
-
-.modules-section {
-    background-color: #e0e0e0; /* grey */
-}
-
-.benefits-section {
-    background-color: #ffffff; /* white */
+.card-home li {
+    text-align: center !important;
 }
 
 /* home-one.component.scss */
@@ -4746,17 +5231,81 @@ Animation CSS
     padding: 10px;
     cursor: grab;
     user-select: none;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    /* Ensures cards stay in one line */
 }
 
 .scroll-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari */
+    display: none;
+    /* Hide scrollbar for Chrome, Safari */
 }
 
 .scroll-container .card {
     flex: 0 0 auto;
-    width: 500px; /* Adjust width as needed */
+    width: 500px;
+    /* Adjust width as needed */
     scroll-snap-align: start;
+    transition: transform 0.2s ease-in-out;
 }
 
+.scroll-container .card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge cards on hover */
+}
+
+
+
+
+.cust-container-1 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+.eff-hov p {
+    transition: all 0.3s ease;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #ff6464;
+}
+
+.eff-hov p:hover {
+    color: $paragraph-color;
+    border: 1px solid $main-color;
+    font-size: 20px;
+    background-color: #ff646400;
+}
+
+.card-hover {
+    background-color: $main-color;
+    transition: .5s ease;
+
+    // Ensure default text color inside card
+    p {
+        color: $color-white;
+        transition: color 0.5s ease; // Smooth color transition
+    }
+}
+
+.card-hover:hover {
+    background-color: $color-white;
+    padding: 8px;
+    border: 1px solid $main-color;
+
+    // Change text color when hovering on the card
+    p {
+        color: $main-color;
+    }
+}
+
+.bg-color{
+    background-color: $main-color;
+    color: $color-white;
+}
